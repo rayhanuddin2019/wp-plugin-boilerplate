@@ -3,9 +3,9 @@ namespace Mangocube;
 /*
 **
 *** The registry class contains 2 "Magic Methods" and one object holder
-**
+** 1. Create create some sub-classes
+** 2. Use sub-class via registry
 */
-
 class Registry{
 
    /*

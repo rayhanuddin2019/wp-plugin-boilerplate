@@ -39,6 +39,13 @@ define( 'MANGCUBE_ITEM_NAME', 'MangoCube - Wordpress extension Addons + Builder'
 *** No lets include the bootloader file
 **
 */
+
+do_action('mangocube_before_bootstrap');
 require MANGCUBE_DIR_PATH .'/src/system/boot.php';
 require MANGCUBE_DIR_PATH .'/src/extension/init.php';
 
+
+
+
+
+do_action('mangocube_after_bootstrap');

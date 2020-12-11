@@ -48,7 +48,46 @@ $mangocube_http = $mangocube_container->make('mangocube_http');
 
 $mangocube_config = new Mangocube_Repository(require MANGCUBE_DIR_PATH . 'src/system/config/app.php');
 
+ // Collection
+//  echo '<h2>Collection</h2>';
+//  echo '<pre>';
+//  $people = new MangocubeCollection(['Declan', 'Abner', 'Mitzi']);
 
+//  $people->map(function ($person) {
+// 	 return "<i>$person</i>";
+//  })->each(function ($person) {
+// 	 echo "Collection person: $person\n";
+//  });
+
+// $collection = new MangocubeCollection([
+//     ['product' => 'Desk', 'price' => 200],
+//     ['product' => 'Chair', 'price' => 100],
+//     ['product' => 'Bookcase', 'price' => 150],
+//     ['product' => 'Door', 'price' => 100],
+// ]);
+
+// $filtered = $collection->where('price', 100);
+
+// dump($filtered->all());
+
+// Create a new MessageBag instance.
+// $messageBag = new MangocubeMessageBag;
+
+// // Add new messages to the message bag.
+// $messageBag->add('hello', 'The first message bag message');
+// $messageBag->add('world', 'The second message');
+
+// dump($messageBag);
+
+
+// $finder = new Finder();
+// $finder->files()->in(__DIR__);
+
+// foreach ($finder as $file) {
+//     $contents = $file->getContents();
+//     dump($contents); 
+//     // ...
+// }
 
 
 

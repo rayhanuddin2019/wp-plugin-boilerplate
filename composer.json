@@ -9,7 +9,9 @@
     },
     "require": {
         "illuminate/container": "~7.0",
-        "illuminate/database": "~7.0"
+        "illuminate/config": "~7.0",
+        "illuminate/support": "^7.0",
+        "symfony/finder": "9999999-dev"
     },
     "require-dev": {
         "symfony/var-dumper": "9999999-dev"

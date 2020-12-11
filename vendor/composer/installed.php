@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => 'fa7618adf692331a7a1706c4bb061158b8e58461',
+    'reference' => 'b8898f246cfddd2fd3672446a7426a3d733c9157',
     'name' => '__root__',
   ),
   'versions' => 
@@ -18,7 +18,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => 'fa7618adf692331a7a1706c4bb061158b8e58461',
+      'reference' => 'b8898f246cfddd2fd3672446a7426a3d733c9157',
     ),
     'doctrine/inflector' => 
     array (
@@ -28,6 +28,15 @@
       array (
       ),
       'reference' => 'c6a0da4f0e06aa5cd83a2c1a4e449fae98c8bad7',
+    ),
+    'illuminate/config' => 
+    array (
+      'pretty_version' => '7.x-dev',
+      'version' => '7.9999999.9999999.9999999-dev',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '9d908793eceb04a8c8f74cfc6af3429ce140d2e2',
     ),
     'illuminate/container' => 
     array (
@@ -46,15 +55,6 @@
       array (
       ),
       'reference' => '7ddcd4342c174e1be0e04f6011fea185d3c653c1',
-    ),
-    'illuminate/database' => 
-    array (
-      'pretty_version' => '7.x-dev',
-      'version' => '7.9999999.9999999.9999999-dev',
-      'aliases' => 
-      array (
-      ),
-      'reference' => '13ae12f444c9d071c6867cf86afd2fdedfd081ec',
     ),
     'illuminate/support' => 
     array (
@@ -92,13 +92,6 @@
         0 => '1.0',
       ),
     ),
-    'psr/log-implementation' => 
-    array (
-      'provided' => 
-      array (
-        0 => '1.0',
-      ),
-    ),
     'psr/simple-cache' => 
     array (
       'pretty_version' => 'dev-master',
@@ -109,7 +102,7 @@
       ),
       'reference' => '5a7b96b1dda5d957e01bc1bfe77dcca09c5a7474',
     ),
-    'symfony/console' => 
+    'symfony/finder' => 
     array (
       'pretty_version' => '5.x-dev',
       'version' => '5.9999999.9999999.9999999-dev',
@@ -117,37 +110,7 @@
       array (
         0 => '9999999-dev',
       ),
-      'reference' => 'ddc59f8d4b9e48faaf3056363f702e3915c552c6',
-    ),
-    'symfony/polyfill-ctype' => 
-    array (
-      'pretty_version' => 'dev-main',
-      'version' => 'dev-main',
-      'aliases' => 
-      array (
-        0 => '1.21.x-dev',
-      ),
-      'reference' => 'fade6deebd931cfd7a544f68479405a6a08979a3',
-    ),
-    'symfony/polyfill-intl-grapheme' => 
-    array (
-      'pretty_version' => 'dev-main',
-      'version' => 'dev-main',
-      'aliases' => 
-      array (
-        0 => '1.21.x-dev',
-      ),
-      'reference' => 'be092746c3ab9f9c62608c82e0f04687f8a879f9',
-    ),
-    'symfony/polyfill-intl-normalizer' => 
-    array (
-      'pretty_version' => 'dev-main',
-      'version' => 'dev-main',
-      'aliases' => 
-      array (
-        0 => '1.21.x-dev',
-      ),
-      'reference' => '69609f9f06790591b4b13a45ee117e7bab6395aa',
+      'reference' => '0b9231a5922fd7287ba5b411893c0ecd2733e5ba',
     ),
     'symfony/polyfill-mbstring' => 
     array (
@@ -159,16 +122,6 @@
       ),
       'reference' => '401c9d9d3400c53a8f1a39425f0543406c137a43',
     ),
-    'symfony/polyfill-php73' => 
-    array (
-      'pretty_version' => 'dev-main',
-      'version' => 'dev-main',
-      'aliases' => 
-      array (
-        0 => '1.21.x-dev',
-      ),
-      'reference' => '8c0d39c1526009b97f43beea4cc685bbc353a70b',
-    ),
     'symfony/polyfill-php80' => 
     array (
       'pretty_version' => 'dev-main',
@@ -178,26 +131,6 @@
         0 => '1.21.x-dev',
       ),
       'reference' => '3a11f3dfb34ad50f978cb2b8cf936933b87739aa',
-    ),
-    'symfony/service-contracts' => 
-    array (
-      'pretty_version' => 'dev-main',
-      'version' => 'dev-main',
-      'aliases' => 
-      array (
-        0 => '2.3.x-dev',
-      ),
-      'reference' => '0aeee2f70f4550e6c48c9a796d98f5ceda58dfda',
-    ),
-    'symfony/string' => 
-    array (
-      'pretty_version' => '5.x-dev',
-      'version' => '5.9999999.9999999.9999999-dev',
-      'aliases' => 
-      array (
-        0 => '9999999-dev',
-      ),
-      'reference' => '5bd67751d2e3f7d6f770c9154b8fbcb2aa05f7ed',
     ),
     'symfony/translation' => 
     array (
