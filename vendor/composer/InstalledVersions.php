@@ -19,7 +19,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => 'b8898f246cfddd2fd3672446a7426a3d733c9157',
+    'reference' => '5015024c22b59ed6819b96471ae2f47dbdc91ea4',
     'name' => '__root__',
   ),
   'versions' => 
@@ -31,7 +31,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => 'b8898f246cfddd2fd3672446a7426a3d733c9157',
+      'reference' => '5015024c22b59ed6819b96471ae2f47dbdc91ea4',
     ),
     'doctrine/inflector' => 
     array (
@@ -115,6 +115,16 @@ private static $installed = array (
       ),
       'reference' => '5a7b96b1dda5d957e01bc1bfe77dcca09c5a7474',
     ),
+    'symfony/deprecation-contracts' => 
+    array (
+      'pretty_version' => 'dev-main',
+      'version' => 'dev-main',
+      'aliases' => 
+      array (
+        0 => '2.3.x-dev',
+      ),
+      'reference' => 'be5a36670fd7ccb6f6e03d9c9bd7345e2a9a8515',
+    ),
     'symfony/finder' => 
     array (
       'pretty_version' => '5.x-dev',
@@ -124,6 +134,16 @@ private static $installed = array (
         0 => '9999999-dev',
       ),
       'reference' => '0b9231a5922fd7287ba5b411893c0ecd2733e5ba',
+    ),
+    'symfony/http-foundation' => 
+    array (
+      'pretty_version' => '5.x-dev',
+      'version' => '5.9999999.9999999.9999999-dev',
+      'aliases' => 
+      array (
+        0 => '9999999-dev',
+      ),
+      'reference' => 'cb9b5e79e051e280b0eff7177e4fa6ec5f27d2ad',
     ),
     'symfony/polyfill-mbstring' => 
     array (

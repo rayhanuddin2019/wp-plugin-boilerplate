@@ -90,6 +90,16 @@ $mangocube_config = new Mangocube_Repository(require MANGCUBE_DIR_PATH . 'src/sy
 // }
 
 
+// use Symfony\Component\HttpFoundation\Response;
+
+// $response = new Response(
+//     'Content',
+//     Response::HTTP_OK,
+//     ['content-type' => 'text/html']
+// );
+
+// dump($response);
+
 
 
 
