@@ -1,13 +1,17 @@
 {
     "minimum-stability": "dev",
-    "require": {
-       
-       
-    },
     "autoload": {
+        
         "psr-4": {
             "Mangocube\\": "./src"
         }
         
+    },
+    "require": {
+        "illuminate/container": "~7.0",
+        "illuminate/database": "~7.0"
+    },
+    "require-dev": {
+        "symfony/var-dumper": "9999999-dev"
     }
 }
