@@ -12,13 +12,15 @@
  * Domain Path: /languages
  * 
 */
+if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
+
 if (defined('MANGCUBE')) {
 	/**
 	 * The plugin was already loaded (maybe as another plugin with different directory name)
 	 */
 } else {
 
-            if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
+          
             require __DIR__.'/vendor/autoload.php';
 
 
