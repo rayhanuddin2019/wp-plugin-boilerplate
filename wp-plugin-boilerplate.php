@@ -48,12 +48,18 @@ if (defined('MANGCUBE')) {
             **
             */
 
-            do_action('mangocube_before_bootstrap');
+            add_action('init', 'mangocube_action_init_src');
 
-            require MANGCUBE_DIR_PATH .'/src/system/boot.php';
-            require MANGCUBE_DIR_PATH .'/src/extension/init.php';
-
-
-            do_action('mangocube_after_bootstrap');
+            function mangocube_action_init_src(){
+    
+                do_action('mangocube_before_bootstrap');
+           
+            
+                require MANGCUBE_DIR_PATH .'/src/system/boot.php';
+                require MANGCUBE_DIR_PATH .'/src/extension/init.php';
+        
+        
+                do_action('mangocube_after_bootstrap');
+            }
 
 }
