@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => 'b8898f246cfddd2fd3672446a7426a3d733c9157',
+    'reference' => '5015024c22b59ed6819b96471ae2f47dbdc91ea4',
     'name' => '__root__',
   ),
   'versions' => 
@@ -18,7 +18,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => 'b8898f246cfddd2fd3672446a7426a3d733c9157',
+      'reference' => '5015024c22b59ed6819b96471ae2f47dbdc91ea4',
     ),
     'doctrine/inflector' => 
     array (
@@ -54,7 +54,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => '7ddcd4342c174e1be0e04f6011fea185d3c653c1',
+      'reference' => '7d964384f0283bd7525ae7b5baa7ad32e5503b8e',
     ),
     'illuminate/support' => 
     array (
@@ -63,7 +63,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => 'f6daba7b74d849f854100ade05b952176e9cdf63',
+      'reference' => '1c95b8f842308ff15a56d29d897d3bda29001f1c',
     ),
     'nesbot/carbon' => 
     array (
@@ -73,7 +73,7 @@
       array (
         0 => '2.x-dev',
       ),
-      'reference' => 'a810c01ed9fcaeaa95e8919c4201c953bc9118fb',
+      'reference' => 'd32c57d8389113742f4a88725a170236470012e2',
     ),
     'psr/container' => 
     array (
@@ -167,7 +167,7 @@
       array (
         0 => '9999999-dev',
       ),
-      'reference' => 'ae1ff73e8643a8ef7017eb9c6a4d2e089b9099a6',
+      'reference' => '13e7e882eaa55863faa7c4ad7c60f12f1a8b5089',
     ),
     'voku/portable-ascii' => 
     array (
