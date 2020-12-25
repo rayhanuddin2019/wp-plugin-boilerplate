@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => '5015024c22b59ed6819b96471ae2f47dbdc91ea4',
+    'reference' => '01d740fe0604a0d7bb019d2e1d85a337893ac73b',
     'name' => '__root__',
   ),
   'versions' => 
@@ -18,7 +18,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => '5015024c22b59ed6819b96471ae2f47dbdc91ea4',
+      'reference' => '01d740fe0604a0d7bb019d2e1d85a337893ac73b',
     ),
     'doctrine/inflector' => 
     array (
@@ -54,7 +54,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => '7ddcd4342c174e1be0e04f6011fea185d3c653c1',
+      'reference' => '7d964384f0283bd7525ae7b5baa7ad32e5503b8e',
     ),
     'illuminate/support' => 
     array (
@@ -63,7 +63,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => 'f6daba7b74d849f854100ade05b952176e9cdf63',
+      'reference' => '1c95b8f842308ff15a56d29d897d3bda29001f1c',
     ),
     'nesbot/carbon' => 
     array (
@@ -73,7 +73,7 @@
       array (
         0 => '2.x-dev',
       ),
-      'reference' => 'a810c01ed9fcaeaa95e8919c4201c953bc9118fb',
+      'reference' => 'd32c57d8389113742f4a88725a170236470012e2',
     ),
     'psr/container' => 
     array (
@@ -130,7 +130,7 @@
       array (
         0 => '9999999-dev',
       ),
-      'reference' => 'cb9b5e79e051e280b0eff7177e4fa6ec5f27d2ad',
+      'reference' => '7a3892b5aae2d6639a0b97f4af0147f5f1164ed5',
     ),
     'symfony/polyfill-mbstring' => 
     array (
@@ -187,7 +187,7 @@
       array (
         0 => '9999999-dev',
       ),
-      'reference' => 'ae1ff73e8643a8ef7017eb9c6a4d2e089b9099a6',
+      'reference' => '13e7e882eaa55863faa7c4ad7c60f12f1a8b5089',
     ),
     'voku/portable-ascii' => 
     array (
