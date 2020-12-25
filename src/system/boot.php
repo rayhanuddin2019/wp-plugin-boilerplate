@@ -49,6 +49,17 @@ $mangocube_http = $mangocube_container->make('mangocube_http');
 $mangocube_config = new Mangocube_Repository(require MANGCUBE_DIR_PATH . 'src/system/config/app.php');
 
 
+if ( ! function_exists( 'mangocube_resize' ) ) {
+	function mangocube_resize( $url, $width = false, $height = false, $crop = false ) {
+		$fw_resize = \Mangocube\helpers\resize::getInstance();
+		$response  = $fw_resize->process( $url, $width, $height, $crop );
+
+		return ( ! is_wp_error( $response ) && ! empty( $response['src'] ) ) ? $response['src'] : $url;
+	}
+}
+
+echo  mangocube_resize('http://localhost/wp/production/wp-content/uploads/2020/11/logo-1.png',100,100);
+
 
 
 
