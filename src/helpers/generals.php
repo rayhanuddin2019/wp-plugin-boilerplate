@@ -234,3 +234,34 @@ function mangocube_attr_to_html( array $attr_array ) {
 	return $html_attr;
 }
 
+/**
+ * Download file from remote
+ *
+ * @param string $url 
+ *
+ * @return string $destination path
+ */
+
+if(!function_exists('mangocube_download_file')){
+     
+    function mangocube_download_file($url, $destination) {
+        echo 'downloading ' . $destination . "\n";
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL, $url);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+        curl_setopt( $ch, CURLOPT_ENCODING, "UTF-8" );
+    
+        $data = curl_exec ($ch);
+        $error = curl_error($ch);
+    
+        curl_close ($ch);
+    
+        $file = fopen($destination, "w+");
+        fputs($file, $data);
+        fclose($file);
+    }
+}
+
+
+
