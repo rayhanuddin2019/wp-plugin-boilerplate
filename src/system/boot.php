@@ -36,7 +36,10 @@ $mangocube = new \Mangocube\Registry;
 *** 
 **
 */
-require_once MANGCUBE_DIR_PATH .'/src/helpers/generals.php';
+foreach (array('generals') as $file) {
+	require MANGCUBE_DIR_PATH .'/src/helpers/'.$file.'.php';
+}
+
 //Add Httpnput to the global registry
 $mangocube->httpinput = new \Mangocube\base\HttpInput();
 
