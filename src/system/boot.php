@@ -56,7 +56,7 @@ $mangocube_http = $mangocube_container->make('mangocube_http');
 
 $mangocube_config = new Mangocube_Repository(require MANGCUBE_DIR_PATH . 'src/system/config/app.php');
 
-echo  mangocube_resize('http://localhost/wp/production/wp-content/uploads/2020/11/logo-1.png',100,100);
+
 
 
 
