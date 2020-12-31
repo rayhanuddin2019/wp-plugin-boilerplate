@@ -60,6 +60,14 @@ $mangocube_http = $mangocube_container->make('mangocube_http');
 $mangocube_config = new Mangocube_Repository(require MANGCUBE_DIR_PATH . 'src/system/config/app.php');
 
 
+/*
+**  Backend loader
+**  Use this file anywhere of this plugin
+*/
+require_once MANGCUBE_DIR_PATH .'/src/backend/Backend.php';
+
+
+
 
 
 
