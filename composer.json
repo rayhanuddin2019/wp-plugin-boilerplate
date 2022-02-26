@@ -3,16 +3,14 @@
     "autoload": {
         
         "psr-4": {
-            "Mangocube\\": "src/"
+            "Mangocube\\": "app/",
+            "MangoCube_Packages\\": "packages/"
+            
         }
         
     },
     "require": {
-        "illuminate/container": "~7.0",
-        "illuminate/config": "~7.0",
-        "illuminate/support": "^7.0",
-        "symfony/finder": "9999999-dev",
-        "symfony/http-foundation": "9999999-dev"
+       
     },
     "require-dev": {
         "symfony/var-dumper": "9999999-dev"

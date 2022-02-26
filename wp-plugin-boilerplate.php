@@ -40,7 +40,7 @@ if (defined('MANGCUBE')) {
             define( 'MANGCUBE_DIR_PATH', plugin_dir_path( MANGCUBE_ROOT ) );
             define( 'MANGCUBE_ADDONS_DIR_URL', plugin_dir_url( MANGCUBE_ROOT ) );
             define( 'MANGCUBE_PLUGIN_BASE', plugin_basename( MANGCUBE_ROOT ) );
-            define( 'MANGCUBE_ITEM_NAME', 'MangoCube - Wordpress extension Addons + Builder' );
+            define( 'MANGCUBE_ITEM_NAME', 'MangoCube Container - Wordpress extension Addons + Builder' );
 
             /*
             **
@@ -48,7 +48,7 @@ if (defined('MANGCUBE')) {
             **
             */
 
-            add_action('plugins_loaded', 'mangocube_action_init_src');
+            add_action('plugins_loaded', 'mangocube_action_init_src',12);
            
            /*
             **
@@ -58,16 +58,16 @@ if (defined('MANGCUBE')) {
             function mangocube_action_init_src(){
     
                 do_action('mangocube_before_bootstrap');
-            
-            
-                require_once MANGCUBE_DIR_PATH .'/src/system/boot.php';
+                // basic config
+                load_plugin_textdomain( 'mangocube' );
+                require_once MANGCUBE_DIR_PATH .'/app/system/boot.php';
 
                 do_action('mangocube_bootstrap');
                 /*
                 ** All Plugin extension
                 **
                 */
-                require_once MANGCUBE_DIR_PATH .'/src/extension/Init.php';
+                require_once MANGCUBE_DIR_PATH .'/app/extensions/Init.php';
                 do_action('mangocube_extension_bootstrap');
                 
             }
