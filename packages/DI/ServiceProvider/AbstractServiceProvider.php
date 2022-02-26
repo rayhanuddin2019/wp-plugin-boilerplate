@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace MangoCube_Packages\DI\League\Container\ServiceProvider;
+namespace MangoCube_Packages\DI\ServiceProvider;
 
-use MangoCube_Packages\DI\League\Container\ContainerAwareTrait;
+use MangoCube_Packages\DI\ContainerAwareTrait;
 
 abstract class AbstractServiceProvider implements ServiceProviderInterface
 {

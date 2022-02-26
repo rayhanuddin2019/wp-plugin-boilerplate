@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace MangoCube_Packages\DI\League\Container\Inflector;
+namespace MangoCube_Packages\DI\Inflector;
 
 use IteratorAggregate;
-use MangoCube_Packages\DI\League\Container\ContainerAwareInterface;
+use MangoCube_Packages\DI\ContainerAwareInterface;
 
 interface InflectorAggregateInterface extends ContainerAwareInterface, IteratorAggregate
 {

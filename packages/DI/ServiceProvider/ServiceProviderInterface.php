@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace MangoCube_Packages\DI\League\Container\ServiceProvider;
+namespace MangoCube_Packages\DI\ServiceProvider;
 
-use MangoCube_Packages\DI\League\Container\ContainerAwareInterface;
+use MangoCube_Packages\DI\ContainerAwareInterface;
 
 interface ServiceProviderInterface extends ContainerAwareInterface
 {

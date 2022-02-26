@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace MangoCube_Packages\DI\League\Container;
+namespace MangoCube_Packages\DI;
 
 use BadMethodCallException;
-use MangoCube_Packages\DI\League\Container\Exception\ContainerException;
+use MangoCube_Packages\DI\Exception\ContainerException;
 
 trait ContainerAwareTrait
 {

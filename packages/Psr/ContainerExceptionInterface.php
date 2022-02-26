@@ -1,6 +1,6 @@
 <?php
 
-namespace MangoCube_Packages\Psr\Container;
+namespace MangoCube_Packages\Psr;
 
 use Throwable;
 

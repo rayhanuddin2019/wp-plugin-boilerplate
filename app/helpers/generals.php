@@ -308,4 +308,19 @@ function mangocube_get_post_types( $public = true, $value = 'all' ) {
 }
 
 
+if( !function_exists('mangocube_app') ){
+
+	function mangocube_app(){
+
+		static $container = null;
+		
+		if (!$container instanceof \MangoCube_Packages\DI\Container) {
+			$container = new MangoCube_Packages\DI\Container();
+		}
+	
+		return $container;
+	}
+}
+
+
 

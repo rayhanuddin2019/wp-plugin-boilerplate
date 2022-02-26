@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace MangoCube_Packages\Psr\Container;
+namespace MangoCube_Packages\Psr;
 
 /**
  * Describes the interface of a container that exposes methods to read its entries.

@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace MangoCube_Packages\DI\League\Container\Inflector;
+namespace MangoCube_Packages\DI\Inflector;
 
 use Generator;
-use MangoCube_Packages\DI\League\Container\ContainerAwareTrait;
+use MangoCube_Packages\DI\ContainerAwareTrait;
 
 class InflectorAggregate implements InflectorAggregateInterface
 {

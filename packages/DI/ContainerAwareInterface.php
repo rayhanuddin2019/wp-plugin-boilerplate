@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace MangoCube_Packages\DI\League\Container;
+namespace MangoCube_Packages\DI;
 
 interface ContainerAwareInterface
 {

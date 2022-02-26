@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace MangoCube_Packages\DI\League\Container\Argument;
+namespace MangoCube_Packages\DI\Argument;
 
-use MangoCube_Packages\DI\League\Container\DefinitionContainerInterface;
-use MangoCube_Packages\DI\League\Container\Exception\{ContainerException, NotFoundException};
-use MangoCube_Packages\DI\League\Container\ReflectionContainer;
-use MangoCube_Packages\Psr\Container\ContainerInterface;
+use MangoCube_Packages\DI\DefinitionContainerInterface;
+use MangoCube_Packages\DI\Exception\{ContainerException, NotFoundException};
+use MangoCube_Packages\DI\ReflectionContainer;
+use MangoCube_Packages\Psr\ContainerInterface;
 use ReflectionFunctionAbstract;
 use ReflectionNamedType;
 

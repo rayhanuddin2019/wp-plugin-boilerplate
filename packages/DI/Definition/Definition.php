@@ -2,17 +2,17 @@
 
 declare(strict_types=1);
 
-namespace MangoCube_Packages\DI\League\Container\Definition;
+namespace MangoCube_Packages\DI\Definition;
 
-use MangoCube_Packages\DI\League\Container\Argument\{
+use MangoCube_Packages\DI\Argument\{
     ArgumentResolverInterface,
     ArgumentResolverTrait,
     ArgumentInterface,
     LiteralArgumentInterface
 };
-use MangoCube_Packages\DI\League\Container\ContainerAwareTrait;
-use MangoCube_Packages\DI\League\Container\Exception\ContainerException;
-use MangoCube_Packages\Psr\Container\ContainerInterface;
+use MangoCube_Packages\DI\ContainerAwareTrait;
+use MangoCube_Packages\DI\Exception\ContainerException;
+use MangoCube_Packages\Psr\ContainerInterface;
 use ReflectionClass;
 
 class Definition implements ArgumentResolverInterface, DefinitionInterface

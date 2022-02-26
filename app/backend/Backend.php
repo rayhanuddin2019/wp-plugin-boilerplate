@@ -1,6 +1,6 @@
 <?php 
 namespace Mangocube\backend;
-use Mangocube\backend\importer\Menu as Mangocube_Nav;
+use Mangocube\backend\settings\Controller as Some_Service_Controller;
 
 final Class Backend {
     protected $components = [];
@@ -10,11 +10,15 @@ final Class Backend {
     public function __construct(){
         $this->register();
     }
+
     public function register(){
-        $this->nav = new Mangocube_Nav();
-        add_action( 'wp_ajax_mangocube_menu_importer', [$this->nav,'_import_ajax_handler'] );
-        add_action('admin_init',[$this->nav,'register']);
        
+      $an_array = mangocube_app()->get('an-array');
+
+      $provider = mangocube_app()->get(Some_Service_Controller::class);
+  
+        echo $provider->run();
+
     }
 
     

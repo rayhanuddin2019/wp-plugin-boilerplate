@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace MangoCube_Packages\DI\League\Container\Inflector;
+namespace MangoCube_Packages\DI\Inflector;
 
-use MangoCube_Packages\DI\League\Container\Argument\ArgumentResolverInterface;
-use MangoCube_Packages\DI\League\Container\Argument\ArgumentResolverTrait;
-use MangoCube_Packages\DI\League\Container\ContainerAwareTrait;
+use MangoCube_Packages\DI\Argument\ArgumentResolverInterface;
+use MangoCube_Packages\DI\Argument\ArgumentResolverTrait;
+use MangoCube_Packages\DI\ContainerAwareTrait;
 
 class Inflector implements ArgumentResolverInterface, InflectorInterface
 {

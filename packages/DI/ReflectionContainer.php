@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace MangoCube_Packages\DI\League\Container;
+namespace MangoCube_Packages\DI;
 
-use MangoCube_Packages\DI\League\Container\Argument\{ArgumentResolverInterface, ArgumentResolverTrait};
-use MangoCube_Packages\DI\League\Container\Exception\ContainerException;
-use MangoCube_Packages\DI\League\Container\Exception\NotFoundException;
-use MangoCube_Packages\Psr\Container\ContainerInterface;
+use MangoCube_Packages\DI\Argument\{ArgumentResolverInterface, ArgumentResolverTrait};
+use MangoCube_Packages\DI\Exception\ContainerException;
+use MangoCube_Packages\DI\Exception\NotFoundException;
+use MangoCube_Packages\Psr\ContainerInterface;
 use ReflectionClass;
 use ReflectionFunction;
 use ReflectionMethod;

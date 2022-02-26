@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace MangoCube_Packages\DI\League\Container;
+namespace MangoCube_Packages\DI;
 
-use MangoCube_Packages\DI\League\Container\Definition\{DefinitionAggregate, DefinitionInterface, DefinitionAggregateInterface};
-use MangoCube_Packages\DI\League\Container\Exception\{NotFoundException, ContainerException};
-use MangoCube_Packages\DI\League\Container\Inflector\{InflectorAggregate, InflectorInterface, InflectorAggregateInterface};
-use MangoCube_Packages\DI\League\Container\ServiceProvider\{ServiceProviderAggregate,
+use MangoCube_Packages\DI\Definition\{DefinitionAggregate, DefinitionInterface, DefinitionAggregateInterface};
+use MangoCube_Packages\DI\Exception\{NotFoundException, ContainerException};
+use MangoCube_Packages\DI\Inflector\{InflectorAggregate, InflectorInterface, InflectorAggregateInterface};
+use MangoCube_Packages\DI\ServiceProvider\{ServiceProviderAggregate,
     ServiceProviderAggregateInterface,
     ServiceProviderInterface};
-use MangoCube_Packages\Psr\Container\ContainerInterface;
+use MangoCube_Packages\Psr\ContainerInterface;
 
 class Container implements DefinitionContainerInterface
 {

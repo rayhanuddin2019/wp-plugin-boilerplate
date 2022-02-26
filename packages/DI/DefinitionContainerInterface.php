@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace MangoCube_Packages\DI\League\Container;
+namespace MangoCube_Packages\DI;
 
-use MangoCube_Packages\DI\League\Container\Definition\DefinitionInterface;
-use MangoCube_Packages\DI\League\Container\Inflector\InflectorInterface;
-use MangoCube_Packages\DI\League\Container\ServiceProvider\ServiceProviderInterface;
-use MangoCube_Packages\Psr\Container\ContainerInterface;
+use MangoCube_Packages\DI\Definition\DefinitionInterface;
+use MangoCube_Packages\DI\Inflector\InflectorInterface;
+use MangoCube_Packages\DI\ServiceProvider\ServiceProviderInterface;
+use MangoCube_Packages\Psr\ContainerInterface;
 
 interface DefinitionContainerInterface extends ContainerInterface
 {

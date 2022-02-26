@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace MangoCube_Packages\DI\League\Container\Argument;
+namespace MangoCube_Packages\DI\Argument;
 
 interface DefaultValueInterface extends ArgumentInterface
 {

@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace MangoCube_Packages\DI\League\Container\Definition;
+namespace MangoCube_Packages\DI\Definition;
 
 use Generator;
-use MangoCube_Packages\DI\League\Container\ContainerAwareTrait;
-use MangoCube_Packages\DI\League\Container\Exception\NotFoundException;
+use MangoCube_Packages\DI\ContainerAwareTrait;
+use MangoCube_Packages\DI\Exception\NotFoundException;
 
 class DefinitionAggregate implements DefinitionAggregateInterface
 {

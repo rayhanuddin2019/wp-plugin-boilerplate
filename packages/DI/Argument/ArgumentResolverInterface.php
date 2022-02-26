@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace MangoCube_Packages\DI\League\Container\Argument;
+namespace MangoCube_Packages\DI\Argument;
 
-use MangoCube_Packages\DI\League\Container\ContainerAwareInterface;
+use MangoCube_Packages\DI\ContainerAwareInterface;
 use ReflectionFunctionAbstract;
 
 interface ArgumentResolverInterface extends ContainerAwareInterface
