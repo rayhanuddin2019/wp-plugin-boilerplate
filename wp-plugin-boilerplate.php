@@ -60,15 +60,10 @@ if (defined('MANGCUBE')) {
                 do_action('mangocube_before_bootstrap');
                 // basic config
                 load_plugin_textdomain( 'mangocube' );
+
                 require_once MANGCUBE_DIR_PATH .'/app/system/boot.php';
 
                 do_action('mangocube_bootstrap');
-                /*
-                ** All Plugin extension
-                **
-                */
-                require_once MANGCUBE_DIR_PATH .'/app/extensions/Init.php';
-                do_action('mangocube_extension_bootstrap');
                 
             }
 

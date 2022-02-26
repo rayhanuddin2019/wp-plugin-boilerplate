@@ -19,7 +19,7 @@ final Class Backend {
       //dump($an_array);
       $provider = mangocube_app()->get(Some_Service_Controller::class);
   
-      echo $provider->run();
+     // echo $provider->run();
 
     }
 

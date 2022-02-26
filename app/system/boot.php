@@ -1,6 +1,7 @@
 <?php
 
 use Mangocube\system\service\Loader as MangoCube_Services_Loader;
+use Mangocube\system\service\Ext_Loader as MangoCube_Services_Ext_Loader;
 /*
 **
 *** In step one we created a constant called APPLICATION_PATH.
@@ -50,6 +51,16 @@ MangoCube_Services_Loader::getInstance();
 **  Use this file anywhere of this plugin
 */
 require_once MANGCUBE_DIR_PATH .'/app/backend/Backend.php';
+
+/*
+ ****
+ *******
+ ********* Extensions Loader
+ *******
+ ****
+ */
+
+MangoCube_Services_Ext_Loader::getInstance();
 
 
 
