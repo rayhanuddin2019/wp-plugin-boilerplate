@@ -1,8 +1,10 @@
 <?php 
+
 namespace Mangocube\backend;
 use Mangocube\backend\settings\Controller as Some_Service_Controller;
 
 final Class Backend {
+
     protected $components = [];
     protected $services = [];
     protected $nav = null;
@@ -13,11 +15,11 @@ final Class Backend {
 
     public function register(){
        
-      $an_array = mangocube_app()->get('an-array');
-
+      //$an_array = mangocube_app()->get('json-test');
+      //dump($an_array);
       $provider = mangocube_app()->get(Some_Service_Controller::class);
   
-        echo $provider->run();
+      echo $provider->run();
 
     }
 

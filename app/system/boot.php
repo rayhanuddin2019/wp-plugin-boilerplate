@@ -1,5 +1,6 @@
 <?php
 
+use Mangocube\system\service\Loader as MangoCube_Services_Loader;
 /*
 **
 *** In step one we created a constant called APPLICATION_PATH.
@@ -27,12 +28,22 @@ foreach (array('generals') as $file) {
 
 /*
 **
+***
+***** All configs are loaded here 
+**** path to configs is in the app/configs folder
+***
+*/
+
+require_once MANGCUBE_DIR_PATH .'/app/system/config/container.php';
+
+/*
+**
 *** Now at this point we can start including our files, and creating the objects etc.
 *** The first object were going to be including is the regsitry object.
 **
 */
 
-require_once MANGCUBE_DIR_PATH .'/app/system/container.php';
+MangoCube_Services_Loader::getInstance();
 
 /*
 **  Backend loader
