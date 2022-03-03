@@ -62,6 +62,7 @@ if (defined('MANGCUBE')) {
                 load_plugin_textdomain( 'mangocube' );
 
                 require_once MANGCUBE_DIR_PATH .'/app/system/boot.php';
+                require_once MANGCUBE_DIR_PATH .'/sample-config.php';
 
                 do_action('mangocube_bootstrap');
                 
