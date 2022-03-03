@@ -1,5 +1,3 @@
-# wp-plugin-boilerplate
-
 ### How To Register Services Providers
 
 Serviceprovider where we register plugin service like pdf , api those we run later into hooks . Most of the service call from extensions / Module folder. 
@@ -10,14 +8,13 @@ Serviceprovider where we register plugin service like pdf , api those we run lat
 4.  Provide method use for alias
 5. call this service from where in app into hook using container() function https://prnt.sc/LRooCFad2xKz
 
-`
-	$provider = mangocube_app()->get(Some_Service_Controller::class);
-`
 
-	$mangocube_Notice = mangocube_app()->get(Mangocube_Notice::class);
+		$provider = mangocube_app()->get(Some_Service_Controller::class);
+
+		$mangocube_Notice = mangocube_app()->get(Mangocube_Notice::class);
 	
-	$mangocube_Notice->run();
-  `
+		$mangocube_Notice->run();
+  
 
 ###  configuration file create and usage 
 we can use two type of configuration files  (ARRAY , JSON) .
@@ -35,16 +32,16 @@ To get config data use mangocube_container('configs-dashboard'); function Here c
 2. Create a Init.php File and extend extension class
 
 
-	namespace Mangocube\extensions\menu;
-	use Mangocube\base\Extension;
-	final class Init extends Extension
-	{
-	/**
-	 * Store all the classes inside an array
-	 * @return array Full list of classes
-	 */
-	public static function get_services() 
-	{
+		namespace Mangocube\extensions\menu;
+		use Mangocube\base\Extension;
+		final class Init extends Extension
+		{
+		/**
+		 * Store all the classes inside an array
+		 * @return array Full list of classes
+		 */
+		public static function get_services() 
+		{
       
 		return [
 	       Help::class,		
@@ -53,20 +50,21 @@ To get config data use mangocube_container('configs-dashboard'); function Here c
         
 		}
 
-	}`
+	}
+	
+	
 	
 	
 
 3.1 Create a class with register method  
 3.2 put the class in to get_service into Above Init.php
 
-`
-<?php
 
-	namespace Mangocube\extensions\menu;
 
-  
-	final class Help
+    
+    namespace Mangocube\extensions\menu;
+    
+    final class Help
 	{
 		/**
 		 * Store all the classes inside an array
@@ -82,8 +80,7 @@ To get config data use mangocube_container('configs-dashboard'); function Here c
 	
 	}
 
-?>
-`
+
 
 
 
