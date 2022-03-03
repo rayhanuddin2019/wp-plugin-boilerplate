@@ -8,6 +8,7 @@ use MangoCube_Packages\DI\ServiceProvider\AbstractServiceProvider;
 use MangoCube_Packages\DI\ServiceProvider\BootableServiceProviderInterface;
 use Mangocube\backend\settings\Controller as Some_Service_Controller;
 use Mangocube\backend\settings\fields\Text;
+use Mangocube\serviceProviders\App\Notice as Mangocube_Notice;
 
 class SomeServiceProvider extends AbstractServiceProvider
 {
@@ -23,6 +24,7 @@ class SomeServiceProvider extends AbstractServiceProvider
         $services = [
             'some_key',
             Some_Service_Controller::class,
+            Mangocube_Notice::class,
             \Mangocube\backend\settings\fields\Text::class,
           
         ];
@@ -65,6 +67,7 @@ class SomeServiceProvider extends AbstractServiceProvider
              ->addArgument(\Mangocube\backend\settings\fields\Text::class);         
       
 
+         $this->getContainer()->add(\Mangocube\serviceProviders\App\Notice::class);
          $this->getContainer()->add(\Mangocube\backend\settings\fields\Text::class);
 
     }

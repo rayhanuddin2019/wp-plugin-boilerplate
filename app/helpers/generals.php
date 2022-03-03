@@ -363,6 +363,26 @@
 		}
 		
 	}
+
+	if( !function_exists('mangocube_plugin_activation_link_url') ){
+
+		/*****
+		 * @return url
+		 * @since 1.0
+		 * @param plugin file name
+		 * 
+		 */
+		function mangocube_plugin_activation_link_url( $plugin='woocommerce/woocommerce.php' )
+		{
+			$activateUrl = sprintf(admin_url('plugins.php?action=activate&plugin=%s&plugin_status=all&paged=1&s'), $plugin);
+			// change the plugin request to the plugin to pass the nonce check
+			$_REQUEST['plugin'] = $plugin;
+			$activateUrl = wp_nonce_url($activateUrl, 'activate-plugin_' . $plugin);
+	
+			return $activateUrl;
+		}
+
+	}
    
 	
 

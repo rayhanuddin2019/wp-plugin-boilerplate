@@ -9,10 +9,7 @@
         }
         
     },
-    "require": {
-       
-    },
     "require-dev": {
-        "symfony/var-dumper": "9999999-dev"
+        "symfony/var-dumper": "5.4.x-dev"
     }
 }

@@ -1,9 +1,9 @@
 <?php
 
 namespace Mangocube\extensions\menu;
-
+use Mangocube\base\Runner;
   
-final class Help
+final class Help extends Runner
 {
 	/**
 	 * Store all the classes inside an array
