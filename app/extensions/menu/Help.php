@@ -13,7 +13,7 @@ final class Help extends Runner
 	{
 
         // Do anything here
-        dump(__METHOD__);
+        //dump(__METHOD__);
 		
 	}
 	

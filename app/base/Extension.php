@@ -28,6 +28,11 @@ abstract class Extension {
 			
 					if ( method_exists( $service, 'register' ) ) {
 						$service->register();
+					}else{
+						throw new NotFoundException(sprintf(
+							'Unable to instantiat class (%s) as it is not being managed By Runner Please Implement Register method',
+							get_class($class)
+						));
 					}
 				}    
 			
