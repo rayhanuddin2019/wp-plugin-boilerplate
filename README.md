@@ -64,7 +64,7 @@ To get config data use mangocube_container('configs-dashboard'); function Here c
 
     
     namespace Mangocube\extensions\menu;
-    use Bookat\base\Runner;
+    use Mangocube\base\Runner;
     final class Help extends Runner
 	{
 		/**
