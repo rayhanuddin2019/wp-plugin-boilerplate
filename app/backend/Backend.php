@@ -16,12 +16,12 @@ final Class Backend {
 
     public function register(){
        
-      //$an_array = mangocube_app()->get('json-test');
-      //dump($an_array);
-      $provider = mangocube_app()->get(Some_Service_Controller::class);
-      $mangocube_Notice = mangocube_app()->get(Mangocube_Notice::class);
+      $an_array = mangocube_app()->get('configs-app');
+      var_dump($an_array);
+    //   $provider = mangocube_app()->get(Some_Service_Controller::class);
+    //   $mangocube_Notice = mangocube_app()->get(Mangocube_Notice::class);
   
-      $mangocube_Notice->run();
+    //   $mangocube_Notice->run();
 
     }
 
