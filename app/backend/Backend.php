@@ -2,6 +2,7 @@
 
 namespace Mangocube\backend;
 use Mangocube\backend\settings\Controller as Some_Service_Controller;
+use Mangocube\serviceProviders\App\Notice as Mangocube_Notice;
 
 final Class Backend {
 
@@ -18,8 +19,9 @@ final Class Backend {
       //$an_array = mangocube_app()->get('json-test');
       //dump($an_array);
       $provider = mangocube_app()->get(Some_Service_Controller::class);
+      $mangocube_Notice = mangocube_app()->get(Mangocube_Notice::class);
   
-     // echo $provider->run();
+      $mangocube_Notice->run();
 
     }
 
