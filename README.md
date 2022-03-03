@@ -58,13 +58,14 @@ To get config data use mangocube_container('configs-dashboard'); function Here c
 
 3.1 Create a class with register method  
 3.2 put the class in to get_service into Above Init.php
+3.3 Must Impplement runner class
 
 
 
     
     namespace Mangocube\extensions\menu;
-    
-    final class Help
+    use Bookat\base\Runner;
+    final class Help extends Runner
 	{
 		/**
 		 * Store all the classes inside an array
