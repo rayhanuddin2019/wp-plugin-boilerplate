@@ -9,5 +9,6 @@
  */
 
 
+Mangocube\system\config\Loader::getInstance(MANGCUBE_DIR_PATH . 'packages/Options/register','ARRAY');
 Mangocube\system\config\Loader::getInstance(MANGCUBE_DIR_PATH . 'app/configs','ARRAY');
 Mangocube\system\config\Loader::getInstance(MANGCUBE_DIR_PATH . 'app/configs/json','JSON');
