@@ -1,0 +1,43 @@
+select.mangocube-small-select {
+  min-width: 130px;
+}
+select.mangocube-regular-select {
+  min-width: 210px;
+}
+select.mangocube-large-select {
+  min-width: 350px;
+}
+
+.wp-picker-container {
+  vertical-align: middle;
+}
+
+.mangocube-image-preview img {
+  max-width: 180px;
+  height: auto;
+}
+
+.radio-img-item {
+  padding: 2px;
+}
+
+.mangocube-form-table > tbody > tr > th {
+  width: 150px;
+}
+
+.mangocube-repeat-table thead th {
+  width: auto;
+  padding: 15px 10px;
+}
+.mangocube-repeat-table .item-action {
+  text-align: center;
+  width: 100px;
+}
+
+.small-table {
+  width: 380px !important;
+}
+
+.regular-table {
+  width: 620px !important;
+}

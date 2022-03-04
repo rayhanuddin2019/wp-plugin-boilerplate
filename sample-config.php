@@ -256,7 +256,7 @@ function eof_sample_setings_setup() {
 		'id'	=> 'url',
 		'priority'	=> 26,
 		'type'	=> 'url',
-		'url'	=> 'https://moyu.io'
+		'url'	=> 'quomodosoft.com'
 	);
 
 	//Blank
@@ -318,8 +318,8 @@ function eof_sample_setings_setup() {
 		'help_sidebar'		=> '<p>This is help sidebar, it is so cool, right?</p>'
 	);	
 	
-	if(class_exists('EOF')) {
-		$sample_settings_configs = new EOF(
+	if(class_exists('Mangocube_Settings_API')) {
+		$sample_settings_configs = new Mangocube_Settings_API(
 			$configs, 
 			apply_filters( 'eof_sample_option_sections', $sections )
 		);
@@ -333,5 +333,7 @@ function eof_sample_blank_callback() {
 	<p>This is a blank page, you can display whatever you want!</p>
 	<?php
 }
+
+
 
 ?>
