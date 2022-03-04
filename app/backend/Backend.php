@@ -2,28 +2,21 @@
 
 namespace Mangocube\backend;
 use Mangocube\backend\settings\Controller as Some_Service_Controller;
+use Mangocube\backend\settings\Settings_Controller as Settings_Controller;
 use Mangocube\serviceProviders\App\Notice as Mangocube_Notice;
 
 
 final Class Backend {
-
-    protected $components = [];
-    protected $services = [];
-    protected $nav = null;
-     
+  
     public function __construct(){
         $this->register();
     }
 
     public function register(){
-       
-      $an_array = mangocube_app()->get('configs-app');
-      
+     
+      $settings_loader = mangocube_app()->get(Settings_Controller::class);
+      $settings_loader->loader();
 
-    //   $provider = mangocube_app()->get(Some_Service_Controller::class);
-    //   $mangocube_Notice = mangocube_app()->get(Mangocube_Notice::class);
-  
-    //   $mangocube_Notice->run();
 
     }
 
