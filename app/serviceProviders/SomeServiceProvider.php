@@ -9,6 +9,8 @@ use MangoCube_Packages\DI\ServiceProvider\BootableServiceProviderInterface;
 use Mangocube\backend\settings\Controller as Some_Service_Controller;
 use Mangocube\backend\settings\fields\Text;
 use Mangocube\serviceProviders\App\Notice as Mangocube_Notice;
+use Mangocube\serviceProviders\App\Checker as Availability_Checker;
+use Mangocube\serviceProviders\App\Branch as Branch;
 
 class SomeServiceProvider extends AbstractServiceProvider
 {
@@ -25,6 +27,8 @@ class SomeServiceProvider extends AbstractServiceProvider
             'some_key',
             Some_Service_Controller::class,
             Mangocube_Notice::class,
+            Availability_Checker::class,
+            Branch::class,
             \Mangocube\backend\settings\fields\Text::class,
           
         ];
@@ -69,6 +73,8 @@ class SomeServiceProvider extends AbstractServiceProvider
 
          $this->getContainer()->add(\Mangocube\serviceProviders\App\Notice::class);
          $this->getContainer()->add(\Mangocube\backend\settings\fields\Text::class);
+         $this->getContainer()->add(\Mangocube\serviceProviders\App\Checker::class);
+         $this->getContainer()->add(\Mangocube\serviceProviders\App\Branch::class);
 
     }
 }

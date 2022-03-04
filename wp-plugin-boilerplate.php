@@ -37,6 +37,7 @@ if (defined('MANGCUBE')) {
             define( 'MANGCUBE_LITE', true );
             define( 'MANGCUBE_ROOT', __FILE__ );
             define( 'MANGCUBE_URL', plugins_url( '/', MANGCUBE_ROOT ) );
+            define( 'MANGCUBE_ASSETS_URL', MANGCUBE_URL . 'assets/' );
             define( 'MANGCUBE_DIR_PATH', plugin_dir_path( MANGCUBE_ROOT ) );
             define( 'MANGCUBE_ADDONS_DIR_URL', plugin_dir_url( MANGCUBE_ROOT ) );
             define( 'MANGCUBE_PLUGIN_BASE', plugin_basename( MANGCUBE_ROOT ) );
