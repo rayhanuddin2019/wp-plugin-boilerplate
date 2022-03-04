@@ -123,14 +123,13 @@ class Settings {
 			$display = true;
 		
 			$field_class = $this->fieldTypes[$field['type']];
-            
            
 			if( class_exists($field_class) ) {
 				$value  = isset($this->parent->options[ $field['id'] ]) ? $this->parent->options[ $field['id'] ] : '';
 				$render = new $field_class($field, $value, $this->parent);
 				$render->render_field();
 			} else {
-				_e('This field type does not exisits, please check your code.', 'mangocube');
+				_e('This field type does not exists, please check your code.', 'mangocube');
 			}
 
 		}

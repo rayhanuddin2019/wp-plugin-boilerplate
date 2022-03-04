@@ -15,8 +15,6 @@ class Repeat extends Base_Field {
 	 */
 	public function __construct( $field, $value, $parent ) {
 
-	
-
 		//vars
 		$this->parent = $parent;
 		$this->option_name = $field['option_name'];
