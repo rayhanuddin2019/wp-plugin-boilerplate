@@ -23,6 +23,24 @@
     }
 
 	/**
+	 * Get the edited post ID (early) when loading the Edit Post screen.
+	 */
+	function mangocube_get_edited_post_id() {
+		
+		if (
+			! empty( $_GET['post'] ) &&
+			! empty( $_GET['action'] ) &&
+			$_GET['action'] === 'edit' &&
+			! empty( $GLOBALS['pagenow'] ) &&
+			$GLOBALS['pagenow'] === 'post.php'
+		) {
+			return (int) $_GET['post']; // post_ID
+		}
+
+		return 0;
+	}
+
+	/**
 	 * @return bool
 	 * @param domain
 	 */
