@@ -12,6 +12,7 @@
  * Domain Path: /languages
  * 
 */
+
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 if (defined('MANGCUBE')) {
@@ -19,10 +20,8 @@ if (defined('MANGCUBE')) {
 	 * The plugin was already loaded (maybe as another plugin with different directory name)
 	 */
 } else {
-
           
             require __DIR__.'/vendor/autoload.php';
-
 
             /*
             **
@@ -40,7 +39,7 @@ if (defined('MANGCUBE')) {
             define( 'MANGCUBE_ASSETS_URL', MANGCUBE_URL . 'assets/' );
             define( 'MANGCUBE_ASSETS_BACKEND_URL', MANGCUBE_URL . 'assets/backend/' );
             define( 'MANGCUBE_DIR_PATH', plugin_dir_path( MANGCUBE_ROOT ) );
-            define( 'MANGCUBE_ADDONS_DIR_URL', plugin_dir_url( MANGCUBE_ROOT ) );
+            define( 'MANGCUBE_ADDONS_DIR_URL', MANGCUBE_URL . 'app/extensions/' );
             define( 'MANGCUBE_PLUGIN_BASE', plugin_basename( MANGCUBE_ROOT ) );
             define( 'MANGCUBE_ITEM_NAME', 'MangoCube Container - Wordpress extension Addons + Builder' );
 
@@ -66,9 +65,8 @@ if (defined('MANGCUBE')) {
                 require_once MANGCUBE_DIR_PATH .'/app/system/boot.php';
                 
                 do_action('mangocube_bootstrap');
+
                 
             }
-
-           
 
 }
