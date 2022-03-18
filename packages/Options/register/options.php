@@ -7,6 +7,7 @@ return [
     'rich_editor' 	=> '\MangoCube_Packages\Options\Fields\Rich_Editor',
     'color' 		=> '\MangoCube_Packages\Options\Fields\Color',
     'date' 			=> '\MangoCube_Packages\Options\Fields\Date',
+    'date_time' 			=> '\MangoCube_Packages\Options\Fields\Date_Time',
     'email' 		=> '\MangoCube_Packages\Options\Fields\Email',
     'image_select' 	=> '\MangoCube_Packages\Options\Fields\Image_Select',
     'checkbox' 		=> '\MangoCube_Packages\Options\Fields\Checkbox',

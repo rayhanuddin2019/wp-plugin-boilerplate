@@ -29,28 +29,53 @@ final class Loader
         }
     }
 
+    /**
+     * Store array data into Container
+     * @version 1.0
+     * @since 2022
+     * @param config dir full path
+     * @return void 
+     */
     public function store_array_config($dir){
 
         if( is_dir( $dir ) ){
 
-            $files  =  mangocube_get_dir_file_list($dir);
-        
+            $files       = mangocube_get_dir_file_list($dir);
+            $base_folder = basename( $dir);
+            $file_arrs   = [];
+
             foreach($files as $key => $file_path){
 
                 if(file_exists($file_path)){
                     $array_content = include $file_path;
                      
                     if( is_array( $array_content ) ) {
+                          $explode_data = explode('-',$key); 
+                          if(isset($explode_data[1])){
+                            $file_arrs[] = $explode_data[1]; 
+                          }
                           mangocube_app()->add($key, new \MangoCube_Packages\DI\Argument\Literal\ArrayArgument($array_content));
                     }
                 }
     
             }
 
+            // Store Settings and Post meta , Taxonomy Meta
+            if(is_array($file_arrs)){
+                mangocube_app()->add( 'builder-options-'.$base_folder , $file_arrs );
+            }
+            
+     
         }
  
     }
-
+    /**
+     * Store json data into Container
+     * @version 1.0
+     * @since 2022
+     * @param config dir full path
+     * @return void 
+     */
     public function store_json_config( $dir ){
         
 

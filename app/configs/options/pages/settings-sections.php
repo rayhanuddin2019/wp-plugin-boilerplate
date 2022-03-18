@@ -54,6 +54,12 @@
                 'desc'	=> '',
                 'sizes'	=> 'regular'
             ),
+            'date_time' => array(
+                'type'	=> 'date_time',
+                'title'	=> 'Date Time',
+                'desc'	=> '',
+                'sizes'	=> 'regular'
+            ),
             'select' => array(
                 'title' => 'Select',
                 'type' => 'select',

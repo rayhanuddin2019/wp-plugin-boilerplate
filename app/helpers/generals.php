@@ -401,6 +401,18 @@
 		}
 
 	}
+
+	if( !function_exists('mangocube_sanitize_cleaner') ){
+
+		function mangocube_sanitize_cleaner( $var ) {
+			if ( is_array( $var ) ) {
+			  return array_map( 'mangocube_sanitize_cleaner', $var );
+			} else {
+			  return is_scalar( $var ) ? sanitize_text_field( $var ) : $var;
+			}
+		}
+		
+	}
    
 	
 
