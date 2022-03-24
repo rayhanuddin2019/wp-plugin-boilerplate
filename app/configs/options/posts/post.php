@@ -4,7 +4,7 @@ return array(
 
     'title'      => 'Mangocube Extra Items',
     'metabox_id' => 'bookat_extra_items',   //unique
-    'post_type'  => 'post',
+    'post_type'  => 'postsssssss',
     'priority'   => 'high', // low, high
     'position'   => 'normal',         // 
     'fields'     => array(

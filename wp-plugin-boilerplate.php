@@ -42,6 +42,7 @@ if (defined('MANGCUBE')) {
             define( 'MANGCUBE_ADDONS_DIR_URL', MANGCUBE_URL . 'app/extensions/' );
             define( 'MANGCUBE_PLUGIN_BASE', plugin_basename( MANGCUBE_ROOT ) );
             define( 'MANGCUBE_ITEM_NAME', 'MangoCube Container - Wordpress extension Addons + Builder' );
+            define( 'MANGCUBE_ROOT_PAGE', 'Mangocube' );     
 
             /*
             **
